@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from "react";
-import UserDetailsDisplay from "./UserDetailsDisplay.js"
 
-import Link from "react-dom"
 
 const UserList = () => {
 
