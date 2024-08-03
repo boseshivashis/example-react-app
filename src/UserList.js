@@ -50,13 +50,23 @@ const UserList = () => {
         <ol>
             {userList.map( (userRec) => (
                 <li key={userRec.id}><a href="/" onClick={(event) => getUserRec(event, userRec.id)}>{userRec.name}</a> {userRec.username} {userRec.email}
-                 <p>
-                    User Details Placeholder
-                 </p>
+                
                 </li>
             )
 
             )}
+
+            {
+                userDetails  && <p>
+                Name: {userDetails.name}
+                User Name: {userDetails.username}
+                Address:
+                {userDetails.street}
+                {userDetails.suite}
+                {userDetails.website}
+             </p>
+            }
+             
         </ol>
         </>
         )
